@@ -5,7 +5,7 @@ In this project, we will see how to secure a .NET Core API with JWT Bearer Authe
 
 ## API side
 
-- Install packages
+- Install packages for the API
 ```
 Microsoft.AspNetCore.Authentication.JwtBearer
 ```
@@ -23,7 +23,7 @@ Microsoft.AspNetCore.Authentication.JwtBearer
 ## Client side
 
 - create an *App Registration* for the client
-<img src="/pictures/client_app_reg.png" title="client app registration"  width="900">
+<img src="/pictures/client_app_reg.png" title="client app registration"  width="500">
 
 - in the *Certificates & Secrets* section, create a secret for the client
 <img src="/pictures/client_app_reg2.png" title="client app registration"  width="900">
@@ -31,3 +31,11 @@ Microsoft.AspNetCore.Authentication.JwtBearer
 - in the *API Permissions* section, add a permission for our secure API
 <img src="/pictures/client_app_reg3.png" title="client app registration"  width="900">
 <img src="/pictures/client_app_reg4.png" title="client app registration"  width="900">
+
+- Install packages for the client
+```
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.Binder
+Microsoft.Extensions.Configuration.Json
+Microsoft.Identity.Client
+```
